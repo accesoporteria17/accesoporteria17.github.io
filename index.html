@@ -44,6 +44,31 @@
         .button:hover {
             background-color: #45a049;
         }
+        /* Media queries para ajustar el diseño en pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%; /* Para pantallas más pequeñas, que ocupe todo el ancho */
+                padding: 10%;
+            }
+            .button {
+                padding: 8px;
+                font-size: 14px; /* Reducir el tamaño de texto y botones en pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 100%; /* En dispositivos muy pequeños como móviles, usar todo el ancho */
+                padding: 15%;
+            }
+            .button {
+                padding: 6px;
+                font-size: 12px; /* Reducir aún más en móviles */
+            }
+            .question-container {
+                flex-direction: column; /* Cambiar la disposición a columna en pantallas muy pequeñas */
+            }
+        }
     </style>
     <script>
         function redirectToPage(page) {
