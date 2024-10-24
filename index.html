@@ -3,89 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemas en Balanza</title>
+    <title>Transportista</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
         }
         .container {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
             background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            background-color: #ffeb3b;
-            padding: 15px;
-            text-align: center;
+            padding: 30px;
             border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 500px;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #333;
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
         }
-        .content {
-            margin-top: 20px;
+        .question-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
         }
-        .content h2 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
         }
-        .content ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .content ul li {
-            margin-bottom: 15px;
-            font-size: 1.1em;
-        }
-        .content ul li strong {
-            color: #ff9800;
-        }
-        .content ul li span {
-            display: block;
-            margin-top: 5px;
-            color: #555;
+        .button:hover {
+            background-color: #45a049;
         }
     </style>
+    <script>
+        function redirectToPage(page) {
+            // Redireccionar a la página seleccionada
+            window.location.href = page;
+        }
+    </script>
 </head>
 <body>
+
     <div class="container">
-        <div class="header">
-            <h1>¿Qué hago si tengo un problema en balanza?</h1>
+        <h1>¿Qué tipo de transportista es?</h1>
+
+        <div class="question-container">
+            <label for="cebada">
+                <strong>¿Es transportista de cebada?</strong>
+            </label>
+            <button class="button" onclick="redirectToPage('cebada.html')">Siguiente</button>
         </div>
-        <div class="content">
-            <h2>Leer pantalla de balanza:</h2>
-            <ul>
-                <li><strong>No asignado:</strong>
-                    <span>Comunicarse con su transportista</span>
-                </li>
-                <li><strong>No tiene e-Remito origen:</strong>
-                    <span>Comunicarse con la planta de origen</span>
-                </li>
-                <li><strong>Plan comienza (Pesando fuera de hora):</strong>
-                    <span>Comunicarse con su transportista</span>
-                </li>
-                <li><strong>Sobrepeso:</strong>
-                    <span>Comunicarse con su transportista</span>
-                </li>
-                <li><strong>Documentación vencida:</strong>
-                    <span>Comunicarse con su transportista</span>
-                </li>
-                <li><strong>Tarjeta no encontrada:</strong>
-                    <span>QR incorrecto / Comunicarse con logística</span>
-                </li>
-                <li><strong>Chofer identificado tiene otra pesada abierta:</strong>
-                    <span>El mismo chofer no puede pesar dos camiones a la vez</span>
-                </li>
-            </ul>
+
+        <div class="question-container">
+            <label for="lenaChip">
+                <strong>¿Es transportista de leña o chip?</strong>
+            </label>
+            <button class="button" onclick="redirectToPage('leña_chip.html')">Siguiente</button>
         </div>
+
     </div>
+
 </body>
 </html>
