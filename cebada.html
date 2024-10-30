@@ -46,7 +46,21 @@
             cursor: pointer;
             font-size: 16px;
             display: block;
-            margin: 20px auto;
+            margin: 10px auto;
+            width: 80%; /* Ajustar el ancho del botón al 80% */
+            max-width: 200px;
+            text-align: center;
+        }
+        .button2 {
+            background-color: #4c6daf;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 10px auto;
             width: 80%; /* Ajustar el ancho del botón al 80% */
             max-width: 200px;
             text-align: center;
@@ -58,21 +72,28 @@
         /* Media queries para diseño responsive */
         @media (max-width: 768px) {
             .container {
-                width: 90%; /* Para pantallas más pequeñas, ocupar todo el ancho */
+                width: 100%; /* Para pantallas más pequeñas, ocupar todo el ancho */
                 padding: 10%;
             }
             .button {
+                width: 90%; /* Ajustar botones en pantallas medianas */
+            }
+            .button2 {
                 width: 90%; /* Ajustar botones en pantallas medianas */
             }
         }
 
         @media (max-width: 480px) {
             .container {
-                width: 90%; /* En móviles, usar el 100% del ancho */
+                width: 100%; /* En móviles, usar el 100% del ancho */
                 padding: 15%;
             }
             .button {
-                width: 90%; /* Botón ocupando el 100% en pantallas muy pequeñas */
+                width: 100%; /* Botón ocupando el 100% en pantallas muy pequeñas */
+                font-size: 14px; /* Reducir el tamaño de la fuente en móviles */
+            }
+            .button2 {
+                width: 100%; /* Botón ocupando el 100% en pantallas muy pequeñas */
                 font-size: 14px; /* Reducir el tamaño de la fuente en móviles */
             }
             ul li {
@@ -92,12 +113,16 @@
             <li><strong>Plan Comienza (Pesando fuera de hora):</strong> Comuníquese con su transportista.</li>
             <li><strong>Sobrepeso:</strong> Comuníquese con su transportista.</li>
             <li><strong>Documentación Vencida:</strong> Comuníquese con su transportista.</li>
-            <li><strong>Tarjeta no encontrada:</strong> QR incorrecto / comuníquese con logística al cel: 094 731 197.</li>
-            <li><strong>Si queda procesando lectura y no le autoriza:</strong> Comunicarse con Comuníquese al cel: 094 731 197.</li>
-            <li><strong>Si el lector de la balanza no lee el QR/Tarjeta:</strong> Comunicarse con Comuníquese al cel: 094 731 197.</li>
+            <li><strong>Tarjeta no encontrada:</strong> QR incorrecto / Comuníquese con su transportista.</li>
+            <li><strong>Si queda procesando lectura y no le autoriza:</strong> Comuníquese con su transportista.</li>
+            <li><strong>Si el lector de la balanza no lee el QR/Tarjeta:</strong> Comuníquese con su transportista.</li>
             <li><strong>Chofer identificado tiene otra pesada abierta:</strong> El mismo chofer no puede pesar dos camiones a la vez.</li>
         </ul>
+        <!-- Botón para volver a inicio -->
         <button class="button" onclick="window.location.href='index.html'">Volver a Inicio</button>
+        
+        <!-- Botón para redirigir a la página del circuito -->
+        <button class="button2" onclick="window.location.href='circuito2.html'">Ver Circuito</button>
     </div>
 
 </body>

@@ -19,8 +19,12 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            text-align: left;
+            text-align: center;
             width: 500px;
+        }
+        .logo {
+            width: 100px; /* Ajusta el tamaño del logo */
+            margin-bottom: 20px;
         }
         h1 {
             text-align: center;
@@ -47,7 +51,7 @@
         /* Media queries para ajustar el diseño en pantallas más pequeñas */
         @media (max-width: 768px) {
             .container {
-                width: 90%; /* Para pantallas más pequeñas, que ocupe todo el ancho */
+                width: 100%; /* Para pantallas más pequeñas, que ocupe todo el ancho */
                 padding: 10%;
             }
             .button {
@@ -58,7 +62,7 @@
 
         @media (max-width: 480px) {
             .container {
-                width: 90%; /* En dispositivos muy pequeños como móviles, usar todo el ancho */
+                width: 100%; /* En dispositivos muy pequeños como móviles, usar todo el ancho */
                 padding: 15%;
             }
             .button {
@@ -80,11 +84,14 @@
 <body>
 
     <div class="container">
+        <!-- Agregar el logo arriba del título -->
+        <img src="logomusa.jpg" alt="Logo Maltería Uruguay" class="logo">
+
         <h1>¿Qué tipo de transportista es?</h1>
 
         <div class="question-container">
             <label for="cebada">
-                <strong>¿Es transportista de cebada ó malta?</strong>
+                <strong>¿Es transportista de cebada o malta?</strong>
             </label>
             <button class="button" onclick="redirectToPage('cebada.html')">Siguiente</button>
         </div>
@@ -97,16 +104,15 @@
         </div>
 
         <div class="question-container">
-            <label for="lenaChip">
-                <strong>¿Es transportista de otros productos?</strong>
+            <label for="otros">
+                <strong>¿Es transportista de otros productos (Polvillo, raicilla y cuarta)?</strong>
             </label>
             <button class="button" onclick="redirectToPage('otros.html')">Siguiente</button>
         </div>
 
-
         <div class="question-container">
-            <label for="lenaChip">
-                <strong>¿Es transportista de encomienda o fletes?</strong>
+            <label for="fletes">
+                <strong>¿Es transportista de encomiendas o fletes?</strong>
             </label>
             <button class="button" onclick="redirectToPage('fletes.html')">Siguiente</button>
         </div>

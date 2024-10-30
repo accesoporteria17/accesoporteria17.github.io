@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instrucciones para Transportista de fletes</title>
+    <title>Circuito para Choferes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,43 +13,42 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            flex-direction: column;
+            text-align: center;
         }
         .container {
             background-color: #fff;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            width: 600px;
-            max-width: 90%;
+            max-width: 800px;
+            width: 90%;
         }
         h1 {
-            text-align: center;
+            margin-top: 0;
+            color: #333;
+        }
+        .description {
+            color: #666;
             margin-bottom: 20px;
-            font-size: 1.8rem;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: #eee;
-            margin: 10px 0;
-            padding: 10px;
-            border-left: 4px solid #4CAF50;
+        .circuit-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         }
         .button {
+            margin-top: 20px;
             background-color: #4CAF50;
             color: white;
-            padding: 10px;
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            display: block;
-            margin: 20px auto;
-            width: 200px;
             text-align: center;
+            text-decoration: none;
         }
         .button:hover {
             background-color: #45a049;
@@ -59,35 +58,33 @@
         /* Ajustes para pantallas medianas como tablets */
         @media (max-width: 768px) {
             .container {
-                padding: 20px;
+                width: 90%;
+                padding: 15px;
             }
             h1 {
                 font-size: 1.5rem;
             }
             .button {
                 font-size: 14px;
-                padding: 8px;
-                width: 150px;
+                padding: 8px 16px;
             }
         }
 
         /* Ajustes para pantallas pequeñas como teléfonos */
         @media (max-width: 480px) {
             .container {
-                padding: 15px;
                 width: 100%;
+                padding: 10px;
             }
             h1 {
                 font-size: 1.2rem;
             }
-            ul li {
-                padding: 8px;
+            .description {
                 font-size: 0.9rem;
             }
             .button {
                 font-size: 12px;
-                padding: 6px;
-                width: 140px;
+                padding: 6px 12px;
             }
         }
     </style>
@@ -95,12 +92,10 @@
 <body>
 
     <div class="container">
-        <h1>Instrucciones para Transportista de encomiendas o fletes</h1>
-        <p>Siga los pasos a continuación si encuentra un problema en la balanza:</p>
-        <ul>
-            <li><strong>Necesita entregar una encomienda o flete:</strong> Comuníquese con almacén al 094 071 775.</li>
-        </ul>
-        <button class="button" onclick="window.location.href='index.html'">Volver a Inicio</button>
+        <h1>Circuito para Choferes</h1>
+        <p class="description">Siga las instrucciones en la imagen para conocer el circuito adecuado.</p>
+        <img src="leña_chip.jpg" alt="Imagen del circuito para choferes" class="circuit-image">
+        <a href="index.html" class="button">Volver a Inicio</a>
     </div>
 
 </body>
