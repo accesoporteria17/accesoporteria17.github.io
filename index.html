@@ -51,8 +51,10 @@
         /* Media queries para ajustar el diseño en pantallas más pequeñas */
         @media (max-width: 768px) {
             .container {
-                width: 100%; /* Para pantallas más pequeñas, que ocupe todo el ancho */
-                padding: 10%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5rem;
             }
             .button {
                 padding: 8px;
@@ -65,10 +67,22 @@
                 width: 100%; /* En dispositivos muy pequeños como móviles, usar todo el ancho */
                 padding: 15%;
             }
-            .button {
-                padding: 6px;
-                font-size: 12px; /* Reducir aún más en móviles */
+            h1 {
+                font-size: 1.2rem;
             }
+
+            ul li {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+            
+            .button {
+                font-size: 12px;
+                padding: 6px;
+                width: 100%; 
+                max-width: 180px;
+            }
+            
             .question-container {
                 flex-direction: column; /* Cambiar la disposición a columna en pantallas muy pequeñas */
             }
