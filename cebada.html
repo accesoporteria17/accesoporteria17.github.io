@@ -69,38 +69,37 @@
             background-color: #45a049;
         }
 
-        /* Media queries para diseño responsive */
+        /* Media queries */
         @media (max-width: 768px) {
             .container {
-                width: 100%; /* Para pantallas más pequeñas, ocupar todo el ancho */
-                padding: 10%;
+                padding: 20px;
             }
-            .button {
-                width: 90%; /* Ajustar botones en pantallas medianas */
+            h1 {
+                font-size: 1.5rem;
             }
-            .button2 {
-                width: 90%; /* Ajustar botones en pantallas medianas */
+            .button, .button2 {
+                font-size: 14px;
+                padding: 8px;
             }
         }
 
         @media (max-width: 480px) {
             .container {
-                width: 100%; /* En móviles, usar el 100% del ancho */
-                padding: 15%;
+                padding: 15px;
+                width: 100%;
             }
             h1 {
-                font-size: 1.5rem;
-            }
-            .button {
-                width: 100%; /* Botón ocupando el 100% en pantallas muy pequeñas */
-                font-size: 14px; /* Reducir el tamaño de la fuente en móviles */
-            }
-            .button2 {
-                width: 100%; /* Botón ocupando el 100% en pantallas muy pequeñas */
-                font-size: 14px; /* Reducir el tamaño de la fuente en móviles */
+                font-size: 1.2rem;
             }
             ul li {
-                padding: 8px; /* Reducir el padding para mejorar en pantallas pequeñas */
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+            .button, .button2 {
+                font-size: 12px;
+                padding: 6px;
+                width: 100%;
+                max-width: 180px;
             }
         }
     </style>
